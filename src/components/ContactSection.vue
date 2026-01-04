@@ -1,0 +1,25 @@
+<script setup>
+</script>
+
+<template>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <div class="address">
+          <h3>Visit Us</h3>
+          <address>
+            Chess Circle,<br>
+            Chennai, Tamil Nadu,<br>
+            India
+          </address>
+        </div>
+        <div class="enquiry">
+          <h3>Get in Touch</h3>
+          <p>Have questions about our courses? We'd love to hear from you!</p>
+          <a href="mailto:info@chessacademy.com" class="btn btn-secondary">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

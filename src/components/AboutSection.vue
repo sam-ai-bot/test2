@@ -1,0 +1,12 @@
+<script setup>
+</script>
+
+<template>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Welcome to Chess Academy, where passion meets strategy. Our experienced instructors are dedicated to nurturing chess talent at all levels, from beginners taking their first steps to advanced players seeking to refine their skills.</p>
+      <p>Whether you prefer learning in a group setting or desire personalized one-to-one attention, we have the perfect program for you. Join our community of chess enthusiasts and embark on your journey to chess mastery.</p>
+    </div>
+  </section>
+</template>
