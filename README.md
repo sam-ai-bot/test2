@@ -1,38 +1,50 @@
 # Chess Academy Website
 
-A responsive single-page website for an online Chess Academy located in Chennai, Tamil Nadu, India.
+A responsive single-page website for an online Chess Academy located in Chennai, Tamil Nadu, India. Built with Next.js and React.
 
 ## Features
 
 - Responsive design that works on desktop, tablet, and mobile devices
-- Chess-themed visual design (black, white, gold accent colors)
+- Chess Green themed visual design
 - Smooth scrolling navigation
 - Mobile-friendly hamburger menu
 - Scroll-triggered fade-in animations
 - Two course offerings: Group Classes and One-to-One Classes
 - Contact section with academy address
+- SEO optimized with Open Graph and Twitter Card meta tags
 
 ## Project Structure
 
 ```
 chess-academy/
-├── index.html          # Main HTML file
-├── css/
-│   └── styles.css      # All styles including responsive design
-├── js/
-│   └── main.js         # JavaScript for interactivity
-├── images/             # Image assets folder
-├── .gitignore          # Git ignore file
-└── README.md           # This file
+├── public/                 # Static assets (images, favicon)
+├── src/
+│   ├── app/
+│   │   ├── layout.js       # Root layout with metadata
+│   │   └── page.js         # Main page component
+│   ├── components/
+│   │   ├── Header.jsx      # Navigation with mobile menu
+│   │   ├── Hero.jsx        # Hero section
+│   │   ├── About.jsx       # About section
+│   │   ├── Courses.jsx     # Courses section
+│   │   ├── Contact.jsx     # Contact section
+│   │   ├── Footer.jsx      # Footer section
+│   │   └── FadeInSection.jsx  # Animation wrapper
+│   └── styles/
+│       └── globals.css     # Global styles
+├── next.config.mjs         # Next.js configuration
+├── package.json            # Dependencies and scripts
+└── README.md               # This file
 ```
 
 ## Getting Started
 
 ### Prerequisites
 
-No build tools or dependencies are required. This is a vanilla HTML/CSS/JavaScript project.
+- Node.js 18 or higher
+- npm or yarn
 
-### Running Locally
+### Installation
 
 1. Clone the repository:
    ```bash
@@ -40,18 +52,31 @@ No build tools or dependencies are required. This is a vanilla HTML/CSS/JavaScri
    cd test2
    ```
 
-2. Open `index.html` in your web browser:
-   - Double-click the `index.html` file, or
-   - Use a local development server (recommended):
-     ```bash
-     # Using Python 3
-     python -m http.server 8000
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-     # Using Node.js (if http-server is installed)
-     npx http-server
-     ```
+### Development
 
-3. Navigate to `http://localhost:8000` in your browser.
+Run the development server:
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production Build
+
+Build for production:
+```bash
+npm run build
+```
+
+Start the production server:
+```bash
+npm start
+```
 
 ## Academy Information
 
@@ -63,6 +88,12 @@ India
 **Courses Offered:**
 - **Group Classes** - Learn in a collaborative environment with fellow enthusiasts
 - **One-to-One Classes** - Personalized coaching tailored to your goals
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://react.dev/) - UI library
+- CSS with custom properties (CSS variables)
 
 ## Browser Support
 
