@@ -1,6 +1,10 @@
 # Dependencies
 node_modules/
 
+# Build output
+dist/
+.vite/
+
 # OS generated files
 .DS_Store
 .DS_Store?
@@ -22,3 +26,7 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# Local env files
+.env.local
+.env.*.local

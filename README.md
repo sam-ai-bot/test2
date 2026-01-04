@@ -1,38 +1,57 @@
 # Chess Academy Website
 
-A responsive single-page website for an online Chess Academy located in Chennai, Tamil Nadu, India.
+A responsive single-page website for an online Chess Academy located in Chennai, Tamil Nadu, India. Built with React + Vite.
 
 ## Features
 
 - Responsive design that works on desktop, tablet, and mobile devices
-- Chess-themed visual design (black, white, gold accent colors)
+- Chess Green theme with modern color palette
 - Smooth scrolling navigation
 - Mobile-friendly hamburger menu
-- Scroll-triggered fade-in animations
+- Scroll-triggered fade-in animations using Intersection Observer
 - Two course offerings: Group Classes and One-to-One Classes
 - Contact section with academy address
+
+## Tech Stack
+
+- **React 18** - UI library
+- **Vite** - Build tool and dev server
+- **Vitest** - Testing framework
+- **React Testing Library** - Component testing utilities
 
 ## Project Structure
 
 ```
 chess-academy/
-├── index.html          # Main HTML file
-├── css/
-│   └── styles.css      # All styles including responsive design
-├── js/
-│   └── main.js         # JavaScript for interactivity
-├── images/             # Image assets folder
-├── .gitignore          # Git ignore file
-└── README.md           # This file
+├── index.html              # Entry HTML file
+├── src/
+│   ├── main.jsx           # React entry point
+│   ├── App.jsx            # Main app component
+│   ├── components/        # React components
+│   │   ├── Header.jsx     # Navigation with mobile menu
+│   │   ├── Hero.jsx       # Landing section
+│   │   ├── About.jsx      # Academy information
+│   │   ├── Courses.jsx    # Course cards
+│   │   ├── Contact.jsx    # Contact information
+│   │   ├── Footer.jsx     # Footer with social links
+│   │   └── FadeInSection.jsx  # Scroll animation wrapper
+│   ├── styles/
+│   │   └── globals.css    # Global styles
+│   └── test/
+│       └── setup.js       # Test configuration
+├── public/                # Static assets
+├── vite.config.js         # Vite configuration
+├── package.json           # Dependencies and scripts
+└── README.md              # This file
 ```
 
 ## Getting Started
 
 ### Prerequisites
 
-No build tools or dependencies are required. This is a vanilla HTML/CSS/JavaScript project.
+- Node.js 18+ and npm
 
-### Running Locally
+### Installation
 
 1. Clone the repository:
    ```bash
@@ -40,18 +59,43 @@ No build tools or dependencies are required. This is a vanilla HTML/CSS/JavaScri
    cd test2
    ```
 
-2. Open `index.html` in your web browser:
-   - Double-click the `index.html` file, or
-   - Use a local development server (recommended):
-     ```bash
-     # Using Python 3
-     python -m http.server 8000
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-     # Using Node.js (if http-server is installed)
-     npx http-server
-     ```
+### Development
 
-3. Navigate to `http://localhost:8000` in your browser.
+Start the development server:
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Testing
+
+Run the test suite:
+```bash
+npm test
+```
+
+Run tests once (CI mode):
+```bash
+npm run test:run
+```
+
+### Production Build
+
+Create a production build:
+```bash
+npm run build
+```
+
+Preview the production build:
+```bash
+npm run preview
+```
 
 ## Academy Information
 
