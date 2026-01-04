@@ -1,21 +1,21 @@
 /* Chess Academy Styles */
 
-/* CSS Variables - Wooden Chess Theme Color Palette */
+/* CSS Variables - Chess Green Theme Color Palette */
 :root {
-    --color-black: #4E342E;       /* Deep mahogany - primary dark */
-    --color-dark: #5D4037;        /* Rich walnut brown - dark sections */
-    --color-white: #FDF6E8;       /* Light maple/cream - light areas */
-    --color-off-white: #F5EFE0;   /* Very light wood - backgrounds */
-    --color-accent: #CD853F;      /* Peru/honey wood - highlights */
-    --color-accent-dark: #A0522D; /* Sienna - hover states */
-    --color-gray: #8D6E63;        /* Warm muted brown - secondary text */
-    --color-light-gray: #D7CCC8;  /* Light warm tone - borders */
+    --color-black: #1B4D3E;       /* Deep forest green - primary dark */
+    --color-dark: #2E5A4F;        /* Hunter green - dark sections */
+    --color-white: #F0F7F4;       /* Mint cream - light areas */
+    --color-off-white: #E8F5E9;   /* Light green tint - backgrounds */
+    --color-accent: #4CAF50;      /* Material green - highlights */
+    --color-accent-dark: #388E3C; /* Darker green - hover states */
+    --color-gray: #5F7A6E;        /* Muted sage - secondary text */
+    --color-light-gray: #C8E6C9;  /* Light sage - borders */
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --transition-speed: 0.3s;
-    /* Warm brown-tinted shadows for wooden aesthetic */
-    --shadow-light: 0 2px 10px rgba(62, 39, 35, 0.12);
-    --shadow-medium: 0 4px 20px rgba(62, 39, 35, 0.18);
-    --shadow-heavy: 0 8px 30px rgba(62, 39, 35, 0.25);
+    /* Green-tinted shadows for chess green aesthetic */
+    --shadow-light: 0 2px 10px rgba(27, 77, 62, 0.12);
+    --shadow-medium: 0 4px 20px rgba(27, 77, 62, 0.18);
+    --shadow-heavy: 0 8px 30px rgba(27, 77, 62, 0.25);
 }
 
 /* Reset and Base Styles */
