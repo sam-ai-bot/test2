@@ -1,0 +1,22 @@
+<section id="courses" class="courses" appFadeIn>
+  <div class="container">
+    <h2>Our Courses</h2>
+    <div class="courses-grid">
+      @for (course of courses; track course.title) {
+        <div class="course-card">
+          <div class="course-icon">
+            <span [class]="course.title === 'Group Classes' ? 'icon-group' : 'icon-individual'">{{ course.icon }}</span>
+          </div>
+          <h3>{{ course.title }}</h3>
+          <p class="course-description">{{ course.description }}</p>
+          <ul class="course-features">
+            @for (feature of course.features; track feature) {
+              <li>{{ feature }}</li>
+            }
+          </ul>
+          <a href="#contact" class="btn btn-primary" (click)="scrollTo($event, '#contact')">Enquire Now</a>
+        </div>
+      }
+    </div>
+  </div>
+</section>

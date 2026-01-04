@@ -1,76 +1,73 @@
-# Chess Academy Website
+# Chess Academy
 
-A responsive single-page website for an online Chess Academy located in Chennai, Tamil Nadu, India.
+A Chess Academy website built with Angular 21, featuring a responsive design with a Chess Green color scheme.
 
 ## Features
 
-- Responsive design that works on desktop, tablet, and mobile devices
-- Chess-themed visual design (black, white, gold accent colors)
-- Smooth scrolling navigation
-- Mobile-friendly hamburger menu
+- Responsive navigation with mobile hamburger menu
+- Hero section with call-to-action
+- About section with academy description
+- Courses section showcasing Group Classes and One-to-One coaching
+- Contact section with location and email
+- Smooth scroll navigation
 - Scroll-triggered fade-in animations
-- Two course offerings: Group Classes and One-to-One Classes
-- Contact section with academy address
+- SEO-optimized with Open Graph and Twitter Card meta tags
+
+## Development
+
+### Prerequisites
+
+- Node.js 18+
+- npm 9+
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development server
+
+```bash
+npm start
+```
+
+Navigate to `http://localhost:4200/`. The application will automatically reload on source changes.
+
+### Building
+
+```bash
+npm run build
+```
+
+Build artifacts are stored in the `dist/` directory.
+
+### Running tests
+
+```bash
+npm test
+```
+
+Tests run with Vitest.
 
 ## Project Structure
 
 ```
-chess-academy/
-├── index.html          # Main HTML file
-├── css/
-│   └── styles.css      # All styles including responsive design
-├── js/
-│   └── main.js         # JavaScript for interactivity
-├── images/             # Image assets folder
-├── .gitignore          # Git ignore file
-└── README.md           # This file
+src/app/
+  components/
+    header/      - Navigation header with mobile menu
+    hero/        - Hero section
+    about/       - About section
+    courses/     - Courses section with course cards
+    contact/     - Contact section
+    footer/      - Footer
+  directives/
+    fade-in/     - Scroll-triggered fade-in animation directive
 ```
 
-## Getting Started
+## Technology Stack
 
-### Prerequisites
-
-No build tools or dependencies are required. This is a vanilla HTML/CSS/JavaScript project.
-
-### Running Locally
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sam-ai-bot/test2.git
-   cd test2
-   ```
-
-2. Open `index.html` in your web browser:
-   - Double-click the `index.html` file, or
-   - Use a local development server (recommended):
-     ```bash
-     # Using Python 3
-     python -m http.server 8000
-
-     # Using Node.js (if http-server is installed)
-     npx http-server
-     ```
-
-3. Navigate to `http://localhost:8000` in your browser.
-
-## Academy Information
-
-**Address:**
-Chess Circle,
-Chennai, Tamil Nadu,
-India
-
-**Courses Offered:**
-- **Group Classes** - Learn in a collaborative environment with fellow enthusiasts
-- **One-to-One Classes** - Personalized coaching tailored to your goals
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## License
-
-This project is proprietary to Chess Academy.
+- Angular 21 with standalone components
+- TypeScript 5.9
+- CSS with CSS variables for theming
+- Vitest for testing

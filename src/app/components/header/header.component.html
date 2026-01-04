@@ -1,0 +1,21 @@
+<header class="header">
+  <nav class="nav">
+    <div class="nav-brand">
+      <a href="#home" (click)="scrollTo($event, '#home')">Chess Academy</a>
+    </div>
+    <button
+      class="nav-toggle"
+      [class.active]="menuOpen()"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu(); $event.stopPropagation()"
+    >
+      <span class="hamburger"></span>
+    </button>
+    <ul class="nav-menu" [class.active]="menuOpen()">
+      <li><a href="#home" class="nav-link" (click)="scrollTo($event, '#home')">Home</a></li>
+      <li><a href="#courses" class="nav-link" (click)="scrollTo($event, '#courses')">Courses</a></li>
+      <li><a href="#about" class="nav-link" (click)="scrollTo($event, '#about')">About</a></li>
+      <li><a href="#contact" class="nav-link" (click)="scrollTo($event, '#contact')">Contact</a></li>
+    </ul>
+  </nav>
+</header>
