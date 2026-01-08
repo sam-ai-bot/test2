@@ -1,4 +1,4 @@
-// Chess Academy JavaScript
+// Music School JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Navigation Toggle
