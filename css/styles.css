@@ -1,21 +1,21 @@
-/* Chess Academy Styles */
+/* Music School Styles */
 
-/* CSS Variables - Modern Indigo and Purple Theme Color Palette */
+/* CSS Variables - Deep Blue and Gold Music School Theme */
 :root {
-    --color-black: #1e1b4b;       /* Deep indigo - primary dark */
-    --color-dark: #312e81;        /* Medium indigo - dark sections */
-    --color-white: #faf5ff;       /* Lavender white - light areas */
-    --color-off-white: #f3e8ff;   /* Subtle lavender - backgrounds */
-    --color-accent: #8b5cf6;      /* Vibrant purple - highlights */
-    --color-accent-dark: #7c3aed; /* Darker purple - hover states */
-    --color-gray: #6b7280;        /* Muted purple-gray - secondary text */
-    --color-light-gray: #c4b5fd;  /* Light lavender - borders */
+    --color-black: #0f172a;       /* Deep navy - primary dark */
+    --color-dark: #1e293b;        /* Slate dark - dark sections */
+    --color-white: #fefce8;       /* Warm cream - light areas */
+    --color-off-white: #fef9c3;   /* Soft gold tint - backgrounds */
+    --color-accent: #eab308;      /* Vibrant gold - highlights */
+    --color-accent-dark: #ca8a04; /* Darker gold - hover states */
+    --color-gray: #64748b;        /* Slate gray - secondary text */
+    --color-light-gray: #fde047;  /* Light gold - borders */
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --transition-speed: 0.3s;
-    /* Indigo-tinted shadows for modern aesthetic */
-    --shadow-light: 0 2px 10px rgba(30, 27, 75, 0.12);
-    --shadow-medium: 0 4px 20px rgba(30, 27, 75, 0.18);
-    --shadow-heavy: 0 8px 30px rgba(30, 27, 75, 0.25);
+    /* Navy-tinted shadows for elegant aesthetic */
+    --shadow-light: 0 2px 10px rgba(15, 23, 42, 0.12);
+    --shadow-medium: 0 4px 20px rgba(15, 23, 42, 0.18);
+    --shadow-heavy: 0 8px 30px rgba(15, 23, 42, 0.25);
 }
 
 /* Reset and Base Styles */
@@ -296,9 +296,9 @@ ul {
 
 .courses-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
