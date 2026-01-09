@@ -1,21 +1,21 @@
 /* Chess Academy Styles */
 
-/* CSS Variables - Modern Indigo and Purple Theme Color Palette */
+/* CSS Variables - Emerald Green Theme Color Palette */
 :root {
-    --color-black: #1e1b4b;       /* Deep indigo - primary dark */
-    --color-dark: #312e81;        /* Medium indigo - dark sections */
-    --color-white: #faf5ff;       /* Lavender white - light areas */
-    --color-off-white: #f3e8ff;   /* Subtle lavender - backgrounds */
-    --color-accent: #8b5cf6;      /* Vibrant purple - highlights */
-    --color-accent-dark: #7c3aed; /* Darker purple - hover states */
-    --color-gray: #6b7280;        /* Muted purple-gray - secondary text */
-    --color-light-gray: #c4b5fd;  /* Light lavender - borders */
+    --color-black: #064e3b;       /* Deep emerald - primary dark */
+    --color-dark: #065f46;        /* Medium emerald - dark sections */
+    --color-white: #f0fdf4;       /* Light mint - main backgrounds */
+    --color-off-white: #ecfdf5;   /* Subtle mint - section backgrounds */
+    --color-accent: #10b981;      /* Vibrant emerald - highlights */
+    --color-accent-dark: #059669; /* Darker emerald - hover states */
+    --color-gray: #6b7280;        /* Muted gray - secondary text */
+    --color-light-gray: #6ee7b7;  /* Light emerald - borders */
     --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --transition-speed: 0.3s;
-    /* Indigo-tinted shadows for modern aesthetic */
-    --shadow-light: 0 2px 10px rgba(30, 27, 75, 0.12);
-    --shadow-medium: 0 4px 20px rgba(30, 27, 75, 0.18);
-    --shadow-heavy: 0 8px 30px rgba(30, 27, 75, 0.25);
+    /* Emerald-tinted shadows for cohesive aesthetic */
+    --shadow-light: 0 2px 10px rgba(6, 78, 59, 0.12);
+    --shadow-medium: 0 4px 20px rgba(6, 78, 59, 0.18);
+    --shadow-heavy: 0 8px 30px rgba(6, 78, 59, 0.25);
 }
 
 /* Reset and Base Styles */
